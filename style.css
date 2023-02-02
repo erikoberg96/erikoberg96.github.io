@@ -1,0 +1,109 @@
+nav {
+    
+    border: solid;
+    border-top-color: pink;
+    border-top-width: 1em;
+
+    text-align: center;
+    font-size: 1.5em;
+}
+
+table {
+    display: block;
+}
+
+tbody {
+    display: block;
+}
+
+tbody tr{
+    display: flex;
+}
+/* Education and experience */
+.tdAndTdseperated tr {
+    display: flex;
+    justify-content: space-between;
+}
+
+#interests li {
+    list-style-type: lower-roman;
+}
+
+.tdAndTdseperated tr td{
+    margin-right: 5em;
+}
+
+
+#skillTable tbody tr{
+    flex-direction: column;
+}
+#skillTable tbody tr td{
+    flex-direction: column;
+    flex: 0 0 65%;
+}
+
+#skillTable tbody tr td:first-child{
+    flex-direction: column;
+}
+
+progress {
+    width: 80%;
+}
+
+article {
+    display: flex;
+}
+
+.LeftDiv h1 {
+    text-align: center;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+    width: 75%;
+    border-radius: 50%;
+
+}
+.RightDiv {
+    padding-left: 1em;
+    flex:0 0 65%;
+    border-left-style: solid;
+    border-left-width: 0.1em;
+}
+
+.LeftDiv {
+    flex:0 0 35%;
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    border-top-style: dashed;
+}
+#aboutMeText p {
+    text-align: center;
+}
+
+@media only screen and (max-width: 800px) {
+    article {
+        flex-direction: column;
+    }
+    .RightDiv{
+        border-left: none;
+    }
+    img {
+        width: 50%;
+        height: 50%;
+        border-radius: 50%;
+    }
+    nav {
+        border-top-color: blue;
+        font-size: 1em;
+    }
+  }
